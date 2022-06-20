@@ -1,0 +1,4 @@
+const Images = {
+};
+
+export { Images };
