@@ -28,11 +28,6 @@ The project is super helpful to kick-start your next project at OOZOU, as it pro
   - `cd ios`
   - `pod install`
   - `yarn ios`
-  ***
-  **Note:**
-  At the time of writing, if you are using an Apple Silicon Mac, `pod install` and `yarn pods` may throw the following error "missing compatible arch".
-  You can run `yarn pods:m1` to install the pods with x86
-  The react-native-maps package also has an issue with building on m1. Use `yarn ios:m1` to build if the build fails due to architecture reasons to force xcode to run through rosetta.
 
 ### Setting up your code editor
 
