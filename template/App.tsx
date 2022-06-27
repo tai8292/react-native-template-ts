@@ -12,11 +12,11 @@ import SplashScreen from 'react-native-splash-screen';
 
 import { Colors, DebugInstructions, Header, LearnMoreLinks, ReloadInstructions } from 'react-native/Libraries/NewAppScreen';
 
-interface IProps {
+interface SectionProps {
   title: string;
 }
 
-const Section: FC<IProps> = ({ children, title }) => {
+const Section: FC<SectionProps> = ({ children, title }) => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
