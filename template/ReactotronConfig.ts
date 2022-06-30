@@ -5,7 +5,7 @@ const reactotronConfig = {
   initiate: () => {
     Reactotron.configure().useReactNative().use(reactotronRedux()).connect();
   },
-  createEnhancer: () => Reactotron.createEnhancer!(),
+  createEnhancer: () => Reactotron.createEnhancer?.(),
 };
 
 export default reactotronConfig;

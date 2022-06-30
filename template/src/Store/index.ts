@@ -18,7 +18,7 @@ const customStorage = {
 
     return JSON.parse(data);
   },
-  async setItem(key: string, data: Object) {
+  async setItem(key: string, data: unknown) {
     return localStorage.setItem(key, JSON.stringify(data));
   },
   async removeItem(key: string) {
@@ -34,7 +34,9 @@ const customStorage = {
 window.requestIdleCallback = null;
 
 export const storeModel: StoreModel = {
-  root: rootStore,
+  root: persist(rootStore, {
+    storage: customStorage,
+  }),
 };
 
 // TODO: Provide type definition for this
@@ -42,6 +44,7 @@ export const storeModel: StoreModel = {
 let storeEnhancers: any = [];
 
 if (__DEV__) {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
   const reactotron = require('../../ReactotronConfig').default;
   reactotron.initiate();
   storeEnhancers = [...storeEnhancers, reactotron.createEnhancer()];
