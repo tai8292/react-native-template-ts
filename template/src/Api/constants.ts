@@ -1,4 +1,3 @@
-const ApiConstants = {
-};
+const ApiConstants = {};
 
 export default ApiConstants;

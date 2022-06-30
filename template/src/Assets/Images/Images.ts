@@ -1,4 +1,3 @@
-const Images = {
-};
+const Images = {};
 
 export { Images };
