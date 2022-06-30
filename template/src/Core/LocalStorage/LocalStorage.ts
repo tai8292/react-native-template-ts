@@ -12,36 +12,20 @@ import {
 } from './LocalStorage.type';
 
 const localStorage: LocalStorage = {
-  getItem: async (
-    key: string,
-    callback?: LocalStorageCallback,
-  ): Promise<string | null> => {
+  getItem: async (key: string, callback?: LocalStorageCallback): Promise<string | null> => {
     return AsyncStorage.getItem(key, callback);
   },
 
-  setItem: async (
-    key: string,
-    value: string,
-    callback?: LocalStorageCallback,
-  ): Promise<void> => {
+  setItem: async (key: string, value: string, callback?: LocalStorageCallback): Promise<void> => {
     return AsyncStorage.setItem(key, value, callback);
   },
 
-  removeItem: async (
-    key: string,
-    callback?: LocalStorageCallback,
-  ): Promise<void> => {
+  removeItem: async (key: string, callback?: LocalStorageCallback): Promise<void> => {
     return AsyncStorage.removeItem(key, callback);
   },
 
-  mergeItem: async (
-    key: string,
-    value: string,
-    callback?: LocalStorageCallback,
-  ): Promise<void> => {
-    return (
-      AsyncStorage.mergeItem && AsyncStorage.mergeItem(key, value, callback)
-    );
+  mergeItem: async (key: string, value: string, callback?: LocalStorageCallback): Promise<void> => {
+    return AsyncStorage.mergeItem && AsyncStorage.mergeItem(key, value, callback);
   },
 
   getAllKeys: async (
@@ -68,16 +52,10 @@ const localStorage: LocalStorage = {
     keyValuePairs: [string, string][],
     callback?: LocalStorageMultiCallback,
   ): Promise<void> => {
-    return (
-      AsyncStorage.multiMerge &&
-      AsyncStorage.multiMerge(keyValuePairs, callback)
-    );
+    return AsyncStorage.multiMerge && AsyncStorage.multiMerge(keyValuePairs, callback);
   },
 
-  multiRemove: async (
-    keys: [],
-    callback?: LocalStorageMultiCallback,
-  ): Promise<void> => {
+  multiRemove: async (keys: [], callback?: LocalStorageMultiCallback): Promise<void> => {
     return AsyncStorage.multiRemove(keys, callback);
   },
 
