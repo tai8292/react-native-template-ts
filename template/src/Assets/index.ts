@@ -5,9 +5,6 @@ import Animations from './Animations';
 // TODO: Move Icons inside Assets
 export { Icons };
 
-const Assets = {
-  Animations,
-  Images,
-};
+const Assets = { Animations, Images };
 
 export default Assets;
