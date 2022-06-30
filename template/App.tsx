@@ -1,16 +1,21 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React, { useEffect, FC } from 'react';
-import { SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, useColorScheme, View } from 'react-native';
+import {
+  SafeAreaView,
+  ScrollView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  useColorScheme,
+  View,
+} from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
-
-import { Colors, DebugInstructions, Header, LearnMoreLinks, ReloadInstructions } from 'react-native/Libraries/NewAppScreen';
+import {
+  Colors,
+  DebugInstructions,
+  Header,
+  LearnMoreLinks,
+  ReloadInstructions,
+} from 'react-native/Libraries/NewAppScreen';
 
 interface SectionProps {
   title: string;
@@ -18,6 +23,7 @@ interface SectionProps {
 
 const Section: FC<SectionProps> = ({ children, title }) => {
   const isDarkMode = useColorScheme() === 'dark';
+
   return (
     <View style={styles.sectionContainer}>
       <Text
@@ -66,7 +72,8 @@ const App: FC = () => {
           }}
         >
           <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this screen and then come back to see your edits.
+            Edit <Text style={styles.highlight}>App.tsx</Text> to change this screen and then come
+            back to see your edits.
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />

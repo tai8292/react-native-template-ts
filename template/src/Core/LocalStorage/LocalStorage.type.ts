@@ -15,19 +15,11 @@ export type LocalStorageKeyValuePair = KeyValuePair;
 export interface LocalStorage {
   getItem(key: string, callback?: LocalStorageCallback): Promise<string | null>;
 
-  setItem(
-    key: string,
-    value: string,
-    callback?: LocalStorageCallback,
-  ): Promise<void>;
+  setItem(key: string, value: string, callback?: LocalStorageCallback): Promise<void>;
 
   removeItem(key: string, callback?: LocalStorageCallback): Promise<void>;
 
-  mergeItem(
-    key: string,
-    value: string,
-    callback?: LocalStorageCallback,
-  ): Promise<void>;
+  mergeItem(key: string, value: string, callback?: LocalStorageCallback): Promise<void>;
 
   getAllKeys: (
     callback?: LocalStorageCallbackWithResult<readonly string[]>,
@@ -38,20 +30,14 @@ export interface LocalStorage {
     callback?: LocalStorageMultiGetCallback,
   ): Promise<readonly LocalStorageKeyValuePair[] | void>;
 
-  multiSet(
-    keyValuePairs: [string, string][],
-    callback?: LocalStorageMultiCallback,
-  ): Promise<void>;
+  multiSet(keyValuePairs: [string, string][], callback?: LocalStorageMultiCallback): Promise<void>;
 
   multiMerge(
     keyValuePairs: [string, string][],
     callback?: LocalStorageMultiCallback,
   ): Promise<void>;
 
-  multiRemove(
-    keys: string[][],
-    callback?: LocalStorageMultiCallback,
-  ): Promise<void>;
+  multiRemove(keys: string[][], callback?: LocalStorageMultiCallback): Promise<void>;
 
   clear(callback?: Callback): Promise<void>;
 }
