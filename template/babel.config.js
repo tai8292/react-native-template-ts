@@ -22,6 +22,8 @@ module.exports = {
           '@Api/*': './src/Api/*',
           '@Constants': './src/Constants',
           '@Constants/*': './src/Constants/*',
+          '@Screens': './src/Screens',
+          '@Screens/*': './src/Screens/*',
           '@Styles': './src/Styles',
           '@Styles/*': './src/Styles/*',
           '@Components': './src/Components',
