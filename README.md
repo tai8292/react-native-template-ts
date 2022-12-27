@@ -3,11 +3,10 @@
 Oozou: React native template for mobile app.
 
 ## Intro
-The project is super helpful to kick-start your next project at OOZOU, as it provides a lot of the common tools you may reach for, all ready to go. Specifically:
+The project is super helpful to kick-start your next project, as it provides a lot of the common tools you may reach for, all ready to go. Specifically:
 - [Easy peasy](https://easy-peasy.vercel.app/): an abstraction of Redux
 - [React navigation](https://reactnavigation.org/): routing and navigation for mobile app
 - [React native splash screen](https://github.com/crazycodeboy/react-native-splash-screen)
-- [Base component](https://github.com/oozou/react-native-ui): base component develop by OOZOU's react native team
 
 ### Setting up your machine
 
@@ -18,7 +17,7 @@ The project is super helpful to kick-start your next project at OOZOU, as it pro
 
 ### Usage
 
-`npx react-native init <Project name> --template git+ssh://git@github.com:oozou/react-native-template.git`
+`npx react-native init <Project name> --template git+ssh://git@github.com:tai8292/react-native-template-ts.git`
 
 ### Running the project
 
