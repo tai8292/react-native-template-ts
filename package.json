@@ -1,8 +1,8 @@
 {
     "name": "react-native-oozou-template",
     "version": "0.0.1",
-    "description": "React Native Template for OOZOU",
-    "repository": "git@github.com:oozou/react-native-template.git",
-    "author": "Linzy <linzy@oozou.com>",
+    "description": "React Native Template TS",
+    "repository": "git@github.com:tai8292/react-native-template-ts.git",
+    "author": "Anthony <tai828292@gmail.com>",
     "license": "MIT"
 }

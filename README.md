@@ -1,6 +1,6 @@
 # react-native-template
 
-Oozou: React native template for mobile app.
+React native template for mobile app.
 
 ## Intro
 The project is super helpful to kick-start your next project, as it provides a lot of the common tools you may reach for, all ready to go. Specifically:
